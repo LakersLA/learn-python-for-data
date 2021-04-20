@@ -1,0 +1,16 @@
+shopping_list = {}
+#First we should create storage in our case in dictionary
+
+survey_ask = True
+while survey_ask: # we should create loop for inputing data or information
+    name_of_buyer = input("\nWhat is your name? ")
+    list_of_items = input("What kind of product do u want to buy? ")
+    shopping_list[name_of_buyer] = list_of_items
+
+    repeat = input("Would you like to add another product to your list ? (yes/ no) ") # to stop loop we created condition
+    if repeat == 'no':
+        survey_ask = False
+print("\n--- Shopping List Results ---")
+for name_of_buyer, list_of_items in shopping_list.items():
+    print(name_of_buyer + " would like to buy " + list_of_items + "
+    
